@@ -2011,8 +2011,9 @@
    ============================================ */
 
 .dash-shell {
-  display: block;
-  min-height: 100vh;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
   background: var(--cream);
 }
 
@@ -2030,18 +2031,17 @@
 
 .dash-sidebar {
   background: var(--ink);
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 240px;
+  flex-shrink: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  z-index: 50;
 }
 
 .dash-main {
-  margin-left: 240px;
+  flex: 1;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .dash-sidebar-top {
@@ -2564,7 +2564,7 @@
 @media (max-width: 900px) {
   .dash-shell { grid-template-columns: 1fr; }
   .dash-sidebar { display: none; }
-  .dash-main { margin-left: 0; }
+  .dash-main { height: auto; }
   .dash-page { padding: 24px; }
   .dash-stats { grid-template-columns: 1fr 1fr; }
   .dash-orders-layout, .dash-briefs-layout, .dash-shop-layout { flex-direction: column; }
