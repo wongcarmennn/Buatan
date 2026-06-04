@@ -2030,16 +2030,13 @@
 
 .dash-sidebar {
   background: var(--ink);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 28px 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 240px;
   height: 100vh;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   z-index: 50;
 }
 
@@ -2047,8 +2044,17 @@
   margin-left: 240px;
 }
 
-.dash-sidebar-top { padding: 0 20px; }
-.dash-sidebar-bottom { padding: 0 20px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px; }
+.dash-sidebar-top {
+  flex: 1;
+  overflow-y: auto;
+  padding: 28px 20px 16px;
+}
+
+.dash-sidebar-bottom {
+  flex-shrink: 0;
+  padding: 16px 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
 
 .dash-logo {
   font-family: var(--serif);
