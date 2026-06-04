@@ -1,0 +1,9 @@
+[build]
+  base = "buatan-app"
+  command = "npm run build"
+  publish = "buatan-app/dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
