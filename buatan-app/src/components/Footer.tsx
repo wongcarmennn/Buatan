@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 Buatan Sdn Bhd · Made in Malaysia 🇲🇾</span>
+        <span>© 2026 Kar Mun Wong Sdn Bhd · Made in Malaysia 🇲🇾</span>
         <span>buatan.my</span>
       </div>
     </footer>
