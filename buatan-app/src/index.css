@@ -2131,8 +2131,6 @@
 
 /* MAIN */
 
-.dash-main { overflow-y: auto; }
-
 .dash-page { padding: 40px 48px; max-width: 1100px; }
 
 .dash-page-header {
