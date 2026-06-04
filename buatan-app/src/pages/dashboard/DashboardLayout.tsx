@@ -12,7 +12,8 @@ export default function DashboardLayout() {
   const { user, loading, signOut } = useAuth()
 
   if (loading) return <div className="dash-loading">Loading…</div>
-  if (!user) return <Navigate to="/signin?next=/dashboard" replace />
+  // Auth gate disabled until Supabase is connected
+  // if (!user) return <Navigate to="/signin?next=/dashboard" replace />
 
   return (
     <div className="dash-shell">
