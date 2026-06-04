@@ -1,4 +1,4 @@
-import { NavLink, Outlet, Navigate } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import { useAuth } from '../../contexts/AuthContext'
 
 const NAV = [
@@ -9,7 +9,7 @@ const NAV = [
 ]
 
 export default function DashboardLayout() {
-  const { user, loading, signOut } = useAuth()
+  const { loading, signOut } = useAuth()
 
   if (loading) return <div className="dash-loading">Loading…</div>
   // Auth gate disabled until Supabase is connected
