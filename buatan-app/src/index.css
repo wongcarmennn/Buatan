@@ -2017,6 +2017,7 @@
   background: var(--cream);
 }
 
+
 .dash-loading {
   display: flex;
   align-items: center;
@@ -2034,10 +2035,17 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 28px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 240px;
   height: 100vh;
   overflow-y: auto;
+  z-index: 50;
+}
+
+.dash-main {
+  margin-left: 240px;
 }
 
 .dash-sidebar-top { padding: 0 20px; }
@@ -2551,6 +2559,7 @@
 @media (max-width: 900px) {
   .dash-shell { grid-template-columns: 1fr; }
   .dash-sidebar { display: none; }
+  .dash-main { margin-left: 0; }
   .dash-page { padding: 24px; }
   .dash-stats { grid-template-columns: 1fr 1fr; }
   .dash-orders-layout, .dash-briefs-layout, .dash-shop-layout { flex-direction: column; }
