@@ -20,13 +20,6 @@ export default function DashboardLayout() {
       <aside className="dash-sidebar">
         <div className="dash-sidebar-top">
           <NavLink to="/" className="dash-logo">bu<em>a</em>tan</NavLink>
-          <div className="dash-maker-info">
-            <div className="dash-maker-avatar">LS</div>
-            <div>
-              <div className="dash-maker-name">Lilin Studio</div>
-              <div className="dash-maker-badge">✓ Verified maker</div>
-            </div>
-          </div>
           <nav className="dash-nav">
             {NAV.map(item => (
               <NavLink
@@ -42,6 +35,13 @@ export default function DashboardLayout() {
           </nav>
         </div>
         <div className="dash-sidebar-bottom">
+          <div className="dash-maker-info">
+            <div className="dash-maker-avatar">LS</div>
+            <div>
+              <div className="dash-maker-name">Lilin Studio</div>
+              <div className="dash-maker-badge">✓ Verified maker</div>
+            </div>
+          </div>
           <NavLink to="/" className="dash-nav-item">← Back to marketplace</NavLink>
           <button className="dash-nav-item dash-signout" onClick={signOut}>Sign out</button>
         </div>
