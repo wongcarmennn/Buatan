@@ -11,7 +11,7 @@ export default function Nav() {
   }
 
   return (
-    <nav>
+    <nav className="site-nav">
       <Link to="/" className="nav-logo">bu<em>a</em>tan</Link>
 
       <ul className="nav-links">
